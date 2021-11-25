@@ -9,6 +9,7 @@ const pool = new Pool({
 
 const cohort = process.argv[2];
 const limit = process.argv[3] || 5;
+// const value = [`%${cohort}%`, limit];
 pool.query(`
 SELECT students.id as student_id, students.name as name, cohorts.name as cohort
 FROM students
